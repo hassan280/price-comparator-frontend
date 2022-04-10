@@ -1,0 +1,143 @@
+.arrival{
+    min-height: 100vh;
+    background-color:rgb(36, 33, 33);
+}
+
+.arrival .box-container{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap:wrap;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding:2rem 0;
+    width: 85%; */
+    
+    margin:0 auto;
+}
+
+.arrival .box-container .box{
+    max-width: 20rem;
+    /* flex: 1 1 20%; */
+    flex:1 1 15rem;
+    border:.1rem solid rgba(100, 99, 99, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin:1rem 2rem;
+    height: 32rem;
+}
+.box::after{
+    flex-grow: 2;
+}
+/* @media (max-width: 1200px) {
+    .box {
+      max-width: 15rem; 
+    }
+} */
+.arrival .box-container .box .image{
+    height: 20rem;
+    
+    text-align: center;
+    background:white;
+}
+
+.arrival .box-container .box .image img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.arrival .box-container .box .info h4{
+   height: 6rem;
+    padding:1rem;
+    font-size: 80%;
+    color:white;
+}
+
+.arrival .box-container .box .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    border-top: .1rem solid white;
+}
+
+.arrival .box-container .box .info .subInfo .price{
+    color:#8b6f6f;
+    font-size: 1.5rem;
+}
+
+.arrival .box-container .box .info .subInfo .price span{
+    color:#666;
+    font-size: 1rem;
+    margin-top: 3rem;
+    text-decoration: line-through;
+}
+
+.arrival .box-container .box .info .subInfo .stars i{
+    color:orange;
+    font-size: 1.5rem;
+}
+
+.arrival .box-container .box .overlay{
+    position: absolute;
+    top:0; left: 0;
+    height:20rem;
+    width: 100%;
+    background:rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.arrival .box-container .box:hover .overlay{
+    transform: scale(1);
+}
+
+.arrival .box-container .box .overlay a{
+    font-size: 2rem;
+    padding:1.5rem 2rem;
+    background:#fff;
+    color:#666;
+    margin:1rem;
+    transform: translateY(-15rem);
+    transition-delay: calc(.1s * var(--i));
+}
+
+.arrival .box-container .box:hover .overlay a{
+    transform: translateY(0rem);
+}
+
+.arrival .box-container .box .overlay a:hover{
+    color:var(--blue);
+}
+/* .button3 a{
+    text-decoration: none;
+    
+} */
+.button3{
+    text-align: center;
+    height: 2rem;
+    width:30%;
+    max-width: 8rem;
+display:inline-block;
+padding:0.5em 1.2em;
+margin:0.3em 0.3em 0.3em 0;
+border-radius:2em;
+box-sizing: border-box;
+/* text-decoration:none; */
+text-decoration-line: none;
+font-family:'Roboto',sans-serif;
+font-size:80%;
+color:black;
+background-color:white;
+/* text-align:center; */
+transition: all 0.2s;
+}
+.button3:hover{
+background-color:#4095c6;
+}

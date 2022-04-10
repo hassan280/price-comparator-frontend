@@ -1,0 +1,46 @@
+
+
+.homescreen{
+   
+    margin: 3rem auto;
+    flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.homescreen h1{
+    color: rgb(72, 72, 187);
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+        margin-bottom:3rem ;
+}
+.homescreen p{
+    color: rgb(63, 23, 112);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;    margin-top:3rem ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    text-align: uppercase;
+}
+
+.searchbar{
+    width: 40rem;
+    max-width: 90%;
+}
+.logo{
+    height: 15rem;
+    width: 20rem;
+}
+.registration{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.registration p{
+    font-size: 20px;
+    font-weight: bold;
+}
